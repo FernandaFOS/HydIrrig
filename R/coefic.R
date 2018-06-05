@@ -8,6 +8,7 @@
 #' @param Se Emitter spacing in meters
 #' @param ne Number of emitters
 #' @param dec Slope on the lateral line
+#' @param HL presures
 #'
 #' @return coefficient a, b e c
 #'

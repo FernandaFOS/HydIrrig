@@ -13,14 +13,16 @@
 #' @param dec Slope on the lateral line
 #' @param qreq Flow rate required at the emitters in cubic meters per second
 #' @param imax Maximum number of iteration
+#' @param toler Maximum tolerance
 #' @param qvr Emitter flow variation
-#' @param qreq Emitter flow variation
 #'
 #' @return D diameter lateral line, pressure head at the end, iter number of iterations, tempo time
 #'
 #' @export
 #' @examples
-#' subunihd(DLL = 0.025,K = 1.053e-6,x = 0.5,DLD = 0.04,SeLL = 4, SeLD = 1, nLL = 100, ne = 10, dec = 0.00, qreq = 3.33333e-6, imax = 100,toler = 1e-6, qvr = 10)
+#' subunihd(DLL = 0.025,K = 1.053e-6,x = 0.5,DLD = 0.04,
+#' SeLL = 4, SeLD = 1, nLL = 100, ne = 10, dec = 0.00,
+#' qreq = 3.33333e-6, imax = 100,toler = 1e-6, qvr = 10)
 
 #Function subunihd
 

@@ -30,6 +30,8 @@ subunih(DLL, K, x, DLD, SeLL, SeLD, nLL, ne, dec, qreq, imax = 100,
 
 \item{imax}{Maximum number of iteration}
 
+\item{toler}{Maximum tolerance}
+
 \item{HfimLDa}{Maximum pressure head at the end of the manifold in meters}
 
 \item{HfimLDb}{Minimum pressure head at the end of the manifold in meters}
@@ -41,7 +43,11 @@ HfimLD pressure head at the end of the manifold, qsistema system flow rate, iter
 Establish the pressure at the start of a lateral line in a subunit
 }
 \examples{
-subunih(DLL = 0.025, K = 1.053e-6, x = 0.5, DLD = 0.04, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, dec = 0.0, qreq = 3.333333e-6, imax = 100, toler = 1e-10, HfimLDa = 100, HfimLDb = 0)
-subunih(DLL=0.025, K = 1.053e-6, x = 0.5, DLD = 0.04, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, dec = 0.01, qreq = 3.333333e-6, imax = 100, toler = 1e-10, HfimLDa = 100, HfimLDb = 0)
+subunih(DLL = 0.025, K = 1.053e-6, x = 0.5, DLD = 0.04,
+SeLL = 1, SeLD = 4, nLL = 10, ne = 100, dec = 0.0,
+qreq = 3.333333e-6, imax = 100, toler = 1e-10, HfimLDa = 100, HfimLDb = 0)
+subunih(DLL=0.025, K = 1.053e-6, x = 0.5, DLD = 0.04,
+SeLL = 1, SeLD = 4, nLL = 10, ne = 100, dec = 0.01,
+qreq = 3.333333e-6, imax = 100, toler = 1e-10, HfimLDa = 100, HfimLDb = 0)
 
 }

@@ -5,21 +5,24 @@
 #' @param Hfim Pressure at the end of the line in mca
 #' @param K Emission coefficient
 #' @param x Emission exponent
-#' @param D Diameter in meters
 #' @param Se Emitter spacing in meters
 #' @param ne Number of emitters
 #' @param dec Slope on the lateral line
 #' @param qvr Emitter flow variation
 #' @param imax Maximum number of iteration
+#' @param toler Maximum tolerance
 #' @param DLLa Maximum diameter in meters
 #' @param DLLb Minimum diameter in meters
 #'
 #' @return D diameter, qv emitter flow variation, iter number iterations, tempo time
 #' @export
 #' @examples
-#' lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100, dec =  0.00, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
-#' lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100, dec =  0.01, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
-#' lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100, dec = -0.01, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
+#' lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100,
+#' dec =  0.00, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
+#' lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100,
+#' dec =  0.01, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
+#' lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100,
+#' dec = -0.01, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
 
 #Function lld
 lld <-

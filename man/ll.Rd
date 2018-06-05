@@ -29,10 +29,16 @@ Q flow rate in lateral line, hf head loss
 Calculate the pressure head and flow rate profile along a lateral line
 }
 \examples{
-ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1, ne = 10, dec = 0.00)
-ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1, ne = 10, dec = 0.01)
-ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1, ne = 10, dec = -0.01)
-ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1, ne = 100, dec = 0.00)
-ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1, ne = 100, dec = 0.01)
-ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1, ne = 100, dec = -0.01)
+ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1,
+ ne = 10, dec = 0.00)
+ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1,
+ne = 10, dec = 0.01)
+ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1,
+ ne = 10, dec = -0.01)
+ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1,
+ ne = 100, dec = 0.00)
+ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1,
+ ne = 100, dec = 0.01)
+ll(Hfim = 10, K = 1.053e-6, x = 0.5, D = 0.025, Se = 1,
+ne = 100, dec = -0.01)
 }

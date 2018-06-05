@@ -10,6 +10,7 @@
 #' @param dec Slope on the lateral line
 #' @param qreq Flow rate required at the emitters in cubic meters per second
 #' @param imax Maximum number of iteration
+#' @param toler Maximum tolerance
 #' @param Hfima Maximum pressure head at the end of the lateral line in meters
 #' @param Hfimb Minimum pressure head at the end of the lateral line in meters
 #'
@@ -18,9 +19,15 @@
 #' @export
 #'
 #' @examples
-#' llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10, dec = 0.0, qreq = 3.333333e-6, imax = 100, toler = 1e-10, Hfima = 30, Hfimb = 0)
-#' llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10, dec = 0.04, qreq = 3.333333e-6, imax = 100, toler = 1e-10,Hfima = 30, Hfimb = 0)
-#' llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10, dec = -0.04, qreq = 3.333333e-6, imax = 100, toler = 1e-10,Hfima = 30, Hfimb = 0)
+#' llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10,
+#' dec = 0.0, qreq = 3.333333e-6, imax = 100, toler = 1e-10,
+#' Hfima = 30, Hfimb = 0)
+#' llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10,
+#' dec = 0.04, qreq = 3.333333e-6, imax = 100, toler = 1e-10,
+#' Hfima = 30, Hfimb = 0)
+#' llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10,
+#'  dec = -0.04, qreq = 3.333333e-6, imax = 100, toler = 1e-10,
+#'  Hfima = 30, Hfimb = 0)
 
 #Function llh
 llh <-

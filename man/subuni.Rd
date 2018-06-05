@@ -21,11 +21,11 @@ subuni(HfimLD, K, x, DLL, DLD, SeLD, SeLL, nLL, ne, dec)
 
 \item{SeLL}{Emitter spacing in meters}
 
+\item{nLL}{Number of lateral lines in meters}
+
 \item{ne}{Number of emitters in meters}
 
 \item{dec}{Slope on the lateral line}
-
-\item{neLL}{Number of lateral lines in meters}
 }
 \value{
 h Pressure profile and q Flow rate Profile
@@ -34,5 +34,7 @@ h Pressure profile and q Flow rate Profile
 calculate of the pressure head and flow rate profile a subunit
 }
 \examples{
-subuni( HfimLD = 15, K = 1.053e-6, x = 0.5, DLL = 0.025, DLD = 0.040, SeLD = 4, SeLL = 1, nLL = 10, ne = 100, dec = 0.0)
+subuni( HfimLD = 15, K = 1.053e-6, x = 0.5, DLL = 0.025,
+ DLD = 0.040, SeLD = 4, SeLL = 1, nLL = 10, ne = 100,
+  dec = 0.0)
 }

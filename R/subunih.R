@@ -14,6 +14,7 @@
 #' @param dec Slope on the lateral line
 #' @param qreq Flow rate required at the emitters in cubic meters per second
 #' @param imax Maximum number of iteration
+#' @param toler Maximum tolerance
 #' @param HfimLDa Maximum pressure head at the end of the manifold in meters
 #' @param HfimLDb Minimum pressure head at the end of the manifold in meters
 
@@ -22,8 +23,12 @@
 #'@export
 #'
 #'@examples
-#'subunih(DLL = 0.025, K = 1.053e-6, x = 0.5, DLD = 0.04, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, dec = 0.0, qreq = 3.333333e-6, imax = 100, toler = 1e-10, HfimLDa = 100, HfimLDb = 0)
-#'subunih(DLL=0.025, K = 1.053e-6, x = 0.5, DLD = 0.04, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, dec = 0.01, qreq = 3.333333e-6, imax = 100, toler = 1e-10, HfimLDa = 100, HfimLDb = 0)
+#'subunih(DLL = 0.025, K = 1.053e-6, x = 0.5, DLD = 0.04,
+#' SeLL = 1, SeLD = 4, nLL = 10, ne = 100, dec = 0.0,
+#'qreq = 3.333333e-6, imax = 100, toler = 1e-10, HfimLDa = 100, HfimLDb = 0)
+#'subunih(DLL=0.025, K = 1.053e-6, x = 0.5, DLD = 0.04,
+#' SeLL = 1, SeLD = 4, nLL = 10, ne = 100, dec = 0.01,
+#' qreq = 3.333333e-6, imax = 100, toler = 1e-10, HfimLDa = 100, HfimLDb = 0)
 #'
 #Function subunih
 subunih <-

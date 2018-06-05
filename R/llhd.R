@@ -17,9 +17,12 @@
 #' @export
 #'
 #' @examples
-#' llhd( D = 0.25, K = 1.053e-6, x = 0.5, Se = 1, ne = 10, dec = 0.00, qreq = 3.33333e-6, imax = 100, toler = 1e-10, qvr = 10)
-#' llhd( D = 0.25, K = 1.053e-6, x = 0.5, Se = 1, ne = 10, dec = 0.04, qreq = 3.33333e-6, imax = 100, toler = 1e-10, qvr = 10)
-#' llhd( D = 0.25, K = 1.053e-6, x = 0.5, Se = 1, ne = 10, dec = 0.04, qreq = 3.33333e-6, imax = 100, toler = 1e-10, qvr = 10)
+#' llhd( D = 0.25, K = 1.053e-6, x = 0.5, Se = 1, ne = 10,
+#'  dec = 0.00, qreq = 3.33333e-6, imax = 100, toler = 1e-10, qvr = 10)
+#' llhd( D = 0.25, K = 1.053e-6, x = 0.5, Se = 1, ne = 10,
+#'  dec = 0.04, qreq = 3.33333e-6, imax = 100, toler = 1e-10, qvr = 10)
+#' llhd( D = 0.25, K = 1.053e-6, x = 0.5, Se = 1, ne = 10,
+#'  dec = 0.04, qreq = 3.33333e-6, imax = 100, toler = 1e-10, qvr = 10)
 
 #Function llhd
   llhd <-

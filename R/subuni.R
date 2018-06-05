@@ -9,7 +9,7 @@
 #' @param DLD Diameter manifold in meters
 #' @param SeLD Lateral line spacing in meters
 #' @param SeLL Emitter spacing in meters
-#' @param neLL Number of lateral lines in meters
+#' @param nLL Number of lateral lines in meters
 #' @param ne Number of emitters in meters
 #' @param dec Slope on the lateral line
 #'
@@ -18,7 +18,9 @@
 #' @export
 #'
 #' @examples
-#' subuni( HfimLD = 15, K = 1.053e-6, x = 0.5, DLL = 0.025, DLD = 0.040, SeLD = 4, SeLL = 1, nLL = 10, ne = 100, dec = 0.0)
+#' subuni( HfimLD = 15, K = 1.053e-6, x = 0.5, DLL = 0.025,
+#'  DLD = 0.040, SeLD = 4, SeLL = 1, nLL = 10, ne = 100,
+#'   dec = 0.0)
 
 #Function subuni
 subuni <-
@@ -68,7 +70,7 @@ subuni <-
         x = x,
         D = DLL,
         Se = SeLL,
-        n = ne,
+        ne = ne,
         dec = dec
       )
     })

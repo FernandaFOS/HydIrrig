@@ -30,9 +30,9 @@ subunihd(DLL, K, x, DLD, SeLL, SeLD, nLL, ne, dec, qreq, imax = 100,
 
 \item{imax}{Maximum number of iteration}
 
-\item{qvr}{Emitter flow variation}
+\item{toler}{Maximum tolerance}
 
-\item{qreq}{Emitter flow variation}
+\item{qvr}{Emitter flow variation}
 }
 \value{
 D diameter lateral line, pressure head at the end, iter number of iterations, tempo time
@@ -41,5 +41,7 @@ D diameter lateral line, pressure head at the end, iter number of iterations, te
 Set the diameter lateral line and pressure required at the start  a subunit
 }
 \examples{
-subunihd(DLL = 0.025,K = 1.053e-6,x = 0.5,DLD = 0.04,SeLL = 4, SeLD = 1, nLL = 100, ne = 10, dec = 0.00, qreq = 3.33333e-6, imax = 100,toler = 1e-6, qvr = 10)
+subunihd(DLL = 0.025,K = 1.053e-6,x = 0.5,DLD = 0.04,
+SeLL = 4, SeLD = 1, nLL = 100, ne = 10, dec = 0.00,
+qreq = 3.33333e-6, imax = 100,toler = 1e-6, qvr = 10)
 }

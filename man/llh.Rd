@@ -24,6 +24,8 @@ llh(D, K, x, Se, ne, dec, qreq, imax = 100, toler = 1e-10, Hfima = 100,
 
 \item{imax}{Maximum number of iteration}
 
+\item{toler}{Maximum tolerance}
+
 \item{Hfima}{Maximum pressure head at the end of the lateral line in meters}
 
 \item{Hfimb}{Minimum pressure head at the end of the lateral line in meters}
@@ -35,7 +37,13 @@ Hfim pressure head at the end of the lateral line, qsistema system flow rate, it
 Determine the pressure at the start of the lateral line
 }
 \examples{
-llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10, dec = 0.0, qreq = 3.333333e-6, imax = 100, toler = 1e-10, Hfima = 30, Hfimb = 0)
-llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10, dec = 0.04, qreq = 3.333333e-6, imax = 100, toler = 1e-10,Hfima = 30, Hfimb = 0)
-llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10, dec = -0.04, qreq = 3.333333e-6, imax = 100, toler = 1e-10,Hfima = 30, Hfimb = 0)
+llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10,
+dec = 0.0, qreq = 3.333333e-6, imax = 100, toler = 1e-10,
+Hfima = 30, Hfimb = 0)
+llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10,
+dec = 0.04, qreq = 3.333333e-6, imax = 100, toler = 1e-10,
+Hfima = 30, Hfimb = 0)
+llh( D = 0.025, K = 1.053e-6, x = 0.5, Se = 1, ne = 10,
+ dec = -0.04, qreq = 3.333333e-6, imax = 100, toler = 1e-10,
+ Hfima = 30, Hfimb = 0)
 }

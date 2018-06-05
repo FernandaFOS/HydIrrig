@@ -13,17 +13,25 @@
 #' @param dec Slope on the lateral line
 #' @param qvr Emitter flow variation
 #' @param imax Maximum number of iteration
-#' @param DLLa Maximum diameter in meters
-#' @param DLLb Minimum diameter in meters
+#' @param toler Maximum tolerance
+#' @param DLDa Maximum diameter in meters
+#' @param DLDb Minimum diameter in meters
 #'
-#' @return D diameter lateral line, qv emitter flow variation, iter number iterations, tempo time
+#' @return D diameter lateral line,
+#'  qv emitter flow variation,
+#'  iter number iterations, tempo time
 #'
 #' @export
 #' @examples
-#' subunid(HfimLD = 10, DLL = 0.025, K = 1.053e-6, x = 0.5, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = 0.00, imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
-#' subunid(HfimLD = 10, DLL = 0.025, K = 1.053e-6, x = 0.5, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = 0.01, imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
-#' subunid(HfimLD = 10, DLL = 0.025, K = 1.053e-6, x = 0.5, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = -0.01, imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
-#' subunid(HfimLD = 20, DLL = 0.025, K = 1.053e-6, x = 0.5, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = -0.01, imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
+#' subunid(HfimLD = 10, DLL = 0.025, K = 1.053e-6, x = 0.5,
+#' SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = 0.00,
+#' imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
+#' subunid(HfimLD = 10, DLL = 0.025, K = 1.053e-6, x = 0.5,
+#' SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = -0.01,
+#' imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
+#' subunid(HfimLD = 20, DLL = 0.025, K = 1.053e-6, x = 0.5,
+#' SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = -0.01,
+#' imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
 
 
 # Function subunid

@@ -24,11 +24,11 @@ lld(Hfim, K, x, Se, ne, dec, qvr, imax = 100, toler = 1e-06, DLLa = 1,
 
 \item{imax}{Maximum number of iteration}
 
+\item{toler}{Maximum tolerance}
+
 \item{DLLa}{Maximum diameter in meters}
 
 \item{DLLb}{Minimum diameter in meters}
-
-\item{D}{Diameter in meters}
 }
 \value{
 D diameter, qv emitter flow variation, iter number iterations, tempo time
@@ -37,7 +37,10 @@ D diameter, qv emitter flow variation, iter number iterations, tempo time
 Set the diameter of a lateral line
 }
 \examples{
-lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100, dec =  0.00, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
-lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100, dec =  0.01, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
-lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100, dec = -0.01, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
+lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100,
+dec =  0.00, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
+lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100,
+dec =  0.01, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
+lld(Hfim = 10, K = 1.053e-6, x = 0.5, Se = 1, ne = 100,
+dec = -0.01, qvr = 10, imax = 100, toler = 1e-6, DLLa = 1, DLLb = 0)
 }

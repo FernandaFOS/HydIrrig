@@ -18,6 +18,8 @@ coefic(K, x, D, Se, ne, dec, HL = c(1, 100, 0.5))
 \item{ne}{Number of emitters}
 
 \item{dec}{Slope on the lateral line}
+
+\item{HL}{presures}
 }
 \value{
 coefficient a, b e c

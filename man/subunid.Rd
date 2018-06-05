@@ -30,19 +30,28 @@ subunid(HfimLD, DLL, K, x, SeLL, SeLD, nLL, ne, dec, qvr = 10, imax = 100,
 
 \item{imax}{Maximum number of iteration}
 
-\item{DLLa}{Maximum diameter in meters}
+\item{toler}{Maximum tolerance}
 
-\item{DLLb}{Minimum diameter in meters}
+\item{DLDa}{Maximum diameter in meters}
+
+\item{DLDb}{Minimum diameter in meters}
 }
 \value{
-D diameter lateral line, qv emitter flow variation, iter number iterations, tempo time
+D diameter lateral line,
+ qv emitter flow variation,
+ iter number iterations, tempo time
 }
 \description{
 Set the diameter of a lateral line
 }
 \examples{
-subunid(HfimLD = 10, DLL = 0.025, K = 1.053e-6, x = 0.5, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = 0.00, imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
-subunid(HfimLD = 10, DLL = 0.025, K = 1.053e-6, x = 0.5, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = 0.01, imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
-subunid(HfimLD = 10, DLL = 0.025, K = 1.053e-6, x = 0.5, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = -0.01, imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
-subunid(HfimLD = 20, DLL = 0.025, K = 1.053e-6, x = 0.5, SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = -0.01, imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
+subunid(HfimLD = 10, DLL = 0.025, K = 1.053e-6, x = 0.5,
+SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = 0.00,
+imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
+subunid(HfimLD = 10, DLL = 0.025, K = 1.053e-6, x = 0.5,
+SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = -0.01,
+imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
+subunid(HfimLD = 20, DLL = 0.025, K = 1.053e-6, x = 0.5,
+SeLL = 1, SeLD = 4, nLL = 10, ne = 100, qvr = 10, dec = -0.01,
+imax = 100, toler = 1e-6, DLDa = 1, DLDb = 0)
 }
