@@ -3,7 +3,7 @@ Title: Hydraulic Modeling of a irrigation system
 Version: 0.1.0
 Authors: person("Fernanda","Oliveira da Silva", email = "fernanda.oliveeira.silva@gmail.com"),
         person("João", "Batista Tolentino Júnior, email = joao.tolentino@ufsc.br"))
-License: What license is it under?
+License: GNU 3
 Encoding: UTF-8
 LazyData: TRUE
 RoxygenNote: 6.0.1
