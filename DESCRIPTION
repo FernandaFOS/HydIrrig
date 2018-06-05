@@ -1,8 +1,9 @@
 Package: HydIrrig
 Title: Hydraulic Modeling of a irrigation system
 Version: 0.1.0
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors: person("Fernanda","Oliveira da Silva", email = "fernanda.oliveeira.silva@gmail.com"),
+        person("João", "Batista Tolentino Júnior, email = joao.tolentino@ufsc.br"))
+Description: A package for hydraulic project of irrigation systems.
 Depends: R (>= 3.4.3)
 License: What license is it under?
 Encoding: UTF-8
