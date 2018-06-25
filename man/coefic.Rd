@@ -4,7 +4,7 @@
 \alias{coefic}
 \title{Coefficient}
 \usage{
-coefic(K, x, D, Se, ne, dec, HL = c(1, 100, 0.5))
+coefic(K, x, D, Se, ne, dec, HL)
 }
 \arguments{
 \item{K}{Emission coefficient}
@@ -19,7 +19,7 @@ coefic(K, x, D, Se, ne, dec, HL = c(1, 100, 0.5))
 
 \item{dec}{Slope on the lateral line}
 
-\item{HL}{presures}
+\item{HL}{Pressure at the end of the manifold in mca}
 }
 \value{
 coefficient a, b e c
@@ -28,6 +28,6 @@ coefficient a, b e c
 Calculate the coefficients of lateral line
 }
 \examples{
-coefic( K = 1.053e-6, x = 0.5, D = 0.015, Se = 1, ne = 100, dec = 0.00, HL = c(1, 100, 0.5))
-coefic( K = 1.053e-6, x = 0.5, D = 0.015, Se = 1, ne = 100, dec = -0.01, HL = c(1, 100, 0.5))
+coefic( K = 1.053e-6, x = 0.5, D = 0.015, Se = 1, ne = 100, dec = 0.00, HL = 15)
+coefic( K = 1.053e-6, x = 0.5, D = 0.015, Se = 1, ne = 100, dec = -0.01, HL = 15)
 }
