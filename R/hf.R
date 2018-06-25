@@ -1,11 +1,11 @@
 #' Head loss in meters overs the length of pipe
 #'
-#' calculate the head loss by fricition in pipes
+#' Calculate the head loss by fricition in pipes
 #'
 #' @param D Diameter in meters
 #' @param Q Flow rate in cubic meters per second
 #' @param L Length of pipe in meters
-#' @param v  Kinematic viscosity of fluiyd in square meters per second.
+#' @param v Kinematic viscosity of fluiyd in square meters per second.
 #' @param E Roughness coefficient in meters
 #' @param x1 Initial parameter of f for Newthon-Raphson
 #' @param g Gravitational acceleration \code{g=9.81} meters per square second.

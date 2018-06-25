@@ -25,7 +25,7 @@ hf(D, Q, L, E = 1e-04, v = 1.01e-06, x1 = 4, g = 9.81)
 regime flow laminar or turbulent, hf Head loss in meters, iterações iterations end tempo time
 }
 \description{
-calculate the head loss by fricition in pipes
+Calculate the head loss by fricition in pipes
 }
 \examples{
 hf(D = 0.025, Q = 0.001,  L = 100)
