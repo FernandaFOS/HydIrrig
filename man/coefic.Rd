@@ -4,7 +4,7 @@
 \alias{coefic}
 \title{Coefficient}
 \usage{
-coefic(K, x, D, Se, ne, dec, HL = c(1, 100, 0.5))
+coefic(K, x, D, Se, ne, dec, HL)
 }
 \arguments{
 \item{K}{Emission coefficient}
