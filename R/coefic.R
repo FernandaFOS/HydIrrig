@@ -24,6 +24,17 @@ coefic <- function (K, x, D, Se, ne, dec, HL ) {
   #time
   ptm <- proc.time()
 
+  HL1 = HL - 10
+  HL2 = HL + 10
+  HL3 = 0.5
+
+  if (HL1<= 0){
+    HL1 <- 1
+  }
+
+  HL = c(HL1, HL2, HL3)
+
+
   # Defines the simulations
   Hfim <- seq(HL[1], HL[2], HL[3])
 
