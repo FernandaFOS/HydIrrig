@@ -8,15 +8,15 @@
 #' @param Se Emitter spacing in meters
 #' @param ne Number of emitters
 #' @param dec Slope on the lateral line
-#' @param HL presures
+#' @param HL Pressure at the end of the manifold in mca
 #'
 #' @return coefficient a, b e c
 #'
 #' @export
 #'
 #' @examples
-#' coefic( K = 1.053e-6, x = 0.5, D = 0.015, Se = 1, ne = 100, dec = 0.00, HL = c(1, 100, 0.5))
-#' coefic( K = 1.053e-6, x = 0.5, D = 0.015, Se = 1, ne = 100, dec = -0.01, HL = c(1, 100, 0.5))
+#' coefic( K = 1.053e-6, x = 0.5, D = 0.015, Se = 1, ne = 100, dec = 0.00, HL = 15)
+#' coefic( K = 1.053e-6, x = 0.5, D = 0.015, Se = 1, ne = 100, dec = -0.01, HL = 15)
 
 #Function coefficcients lateral line
 coefic <- function (K, x, D, Se, ne, dec, HL ) {
@@ -24,11 +24,12 @@ coefic <- function (K, x, D, Se, ne, dec, HL ) {
   #time
   ptm <- proc.time()
 
+  #
   HL1 = HL - 10
   HL2 = HL + 10
   HL3 = 0.5
 
-  if (HL1<= 0){
+  if (HL1 <= 1){
     HL1 <- 1
   }
 
