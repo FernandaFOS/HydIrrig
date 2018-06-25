@@ -19,7 +19,7 @@
 #' coefic( K = 1.053e-6, x = 0.5, D = 0.015, Se = 1, ne = 100, dec = -0.01, HL = c(1, 100, 0.5))
 
 #Function coefficcients lateral line
-coefic <- function (K, x, D, Se, ne, dec, HL = c(1, 100, 0.5)) {
+coefic <- function (K, x, D, Se, ne, dec, HL ) {
 
   #time
   ptm <- proc.time()
