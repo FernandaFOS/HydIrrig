@@ -8,7 +8,7 @@
 #' @param Se Emitter spacing in meters
 #' @param ne Number of emitters
 #' @param dec Slope on the lateral line
-#' @param HL presures
+#' @param HL Pressure at the end of the manifold in mca
 #'
 #' @return coefficient a, b e c
 #'
@@ -29,7 +29,7 @@ coefic <- function (K, x, D, Se, ne, dec, HL ) {
   HL2 = HL + 10
   HL3 = 0.5
 
-  if (HL1<= 0){
+  if (HL1<= 1){
     HL1 <- 1
   }
 
