@@ -46,7 +46,8 @@ subuni <-
     D = DLL,
     Se = SeLL,
     ne = ne,
-    dec = dec
+    dec = dec,
+    HL =  HfimLD
   )
 
   # Calculate manifold
